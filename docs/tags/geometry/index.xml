@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>geometry on Dr.Y Homepage</title>
+    <link>https://whycoding.github.io/tags/geometry/</link>
+    <description>Recent content in geometry on Dr.Y Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 16 May 2017 20:16:57 -0400</lastBuildDate>
+    
+	<atom:link href="https://whycoding.github.io/tags/geometry/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>20170401tikz</title>
+      <link>https://whycoding.github.io/blog/2017/20170401tikz/</link>
+      <pubDate>Tue, 16 May 2017 20:16:57 -0400</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2017/20170401tikz/</guid>
+      <description>If you have problem about the margin, the easies way is crop the figure by some online tools. such as https://pdfresizer.com/
+ \coordinate (a) at (rnd,rnd); \coordinate (b) at (3-rnd,3-rnd); \draw (a) &amp;ndash; (b);
+ \drawrotate=0,decorate, decoration={brace, mirror, amplitude=2pt},xshift=-5pt&amp;ndash; (32,0);
+ \node at (32,0) {some text};
+ \node [draw,align=left,text width=4cm] at (32,0) {some text};
+  \usetikzlibrary{decorations.pathreplacing}
+\drawrotate=0,decorate, decoration={brace, mirror, amplitude=2pt},xshift=-5pt&amp;ndash; (32,0); \node [align = left, text width=2cm] at (22,10) { isomorphic class can be be obtained by shifting to right #=31};</description>
+    </item>
+    
+  </channel>
+</rss>

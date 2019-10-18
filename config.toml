@@ -13,13 +13,14 @@ hasCJKLanguage = true
 # disqusShortname = "your-disqus-shortname"
 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+publishDir = "docs"
 
 [params]
 pagetitle = "Haoyuan Wei"
 copyright = "© 2019 Haoyuan Wei"
 copyrightUrl = "https://whycoding.github.io/"
-faviconfile = "image/favicon.png"
-logofile = "image/avatar.png"
+faviconfile = "image/sid.ico"
+logofile = "image/sid_from_ice_age.jpg"
 posts_navigation = true
 uselatex = true
 highlightjs = true
@@ -27,21 +28,22 @@ progressively = false
 
 github = "whycoding"
 #twitter = "nanxstats"
-linkedin = "nanxstats"
-email = "example@example.com"
+linkedin = "haoyuan-wei-56044972"
+instagram = "haoyuan.breeze"
+#email = "example@example.com"
 
 
 [[menu.primary]]
-identifier = "paper"
-name = "paper"
-url = "/paper/"
+identifier = "publications"
+name = "Publications"
+url = "/publications/"
 weight = 1
 
 
 [[menu.primary]]
-identifier = "project"
-name = "project"
-url = "/project/"
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
 weight = 2
 
 

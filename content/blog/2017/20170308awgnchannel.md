@@ -4,7 +4,6 @@ date = "2017-05-16T19:24:54-04:00"
 title = "AWGN channel"
 tags =["Communications","Research"]
 categories = ["StudyNote"]
-
 +++
 
 ## What is AWGN channel?

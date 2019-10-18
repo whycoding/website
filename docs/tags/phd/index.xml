@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PhD on Dr.Y Homepage</title>
+    <link>https://whycoding.github.io/tags/phd/</link>
+    <description>Recent content in PhD on Dr.Y Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Mar 2017 19:04:26 -0400</lastBuildDate>
+    
+	<atom:link href="https://whycoding.github.io/tags/phd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在卡尔顿大学开始你的博士生涯</title>
+      <link>https://whycoding.github.io/blog/2017/20170307phdcarleton/</link>
+      <pubDate>Tue, 07 Mar 2017 19:04:26 -0400</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2017/20170307phdcarleton/</guid>
+      <description>当我满怀热情地来到这片土地，陌生的环境打破了我几乎所有的经验体系，有太多不熟悉的事情使我感到沮丧， 我感谢那时帮助过我的所有人，也希望下面的经</description>
+    </item>
+    
+  </channel>
+</rss>

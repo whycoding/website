@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Dr.Y Homepage</title>
+    <link>https://whycoding.github.io/blog/</link>
+    <description>Recent content in Blogs on Dr.Y Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 16 Oct 2019 00:42:57 -0400</lastBuildDate>
+    
+	<atom:link href="https://whycoding.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Command: grep cut awk</title>
+      <link>https://whycoding.github.io/blog/2019-10-16-command-grep-cut-awk/</link>
+      <pubDate>Wed, 16 Oct 2019 00:42:57 -0400</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2019-10-16-command-grep-cut-awk/</guid>
+      <description>The three commands can be used to process the text/message. Usually, grep is used to filter lines containing the keyword. cut is used to output part of the line. awk is used to modify the lines.
+grep The common usage of grep to find keyword is as follows.
+fool@bar:~$ grep &amp;quot;keyword&amp;quot; ./file.txt   -n: print the line number -i: ignore case distinctions -w: match whole the words -o: output only the matching segment, rather than the full line -E: use extended regular expression syntax -C2: show 2 context lines in addition to the matched line  cut The common usage of cut to split a line by spaces and select the first field is as follows.</description>
+    </item>
+    
+    <item>
+      <title>Command: redirection and pipe</title>
+      <link>https://whycoding.github.io/blog/2019-10-09-command-redirection-pipe/</link>
+      <pubDate>Wed, 09 Oct 2019 00:42:57 -0400</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2019-10-09-command-redirection-pipe/</guid>
+      <description>Every program running on the command line has three data streams connected to it.
+ STDIN (0) - Standard input (keyboard for example) STDOUT (1) - Standard output (defaults to the terminal) STDERR (2) - Standard error (for error messages, defaults to the terminal)  The program usually gets its arguments from STDIN and outputs messages to STDOUT. The error messages will be output to STDERR. Redirection and pipe can be used to change the source of the argument or the destination of the output message.</description>
+    </item>
+    
+    <item>
+      <title>Regular Expression</title>
+      <link>https://whycoding.github.io/blog/2019-10-01-regular-expression/</link>
+      <pubDate>Tue, 01 Oct 2019 00:42:57 -0400</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2019-10-01-regular-expression/</guid>
+      <description>Regular Expression  Character Classes[0123456789]. It matches any single character in that list.
+ [^0123] any character not in the list.
+ [a-d] equivalent to [abcd].
+ Predefined expressions, [:alnum:], [:alpha:], [:digit:], [:lower:], [:punct:], [:space:], [:upper:]  Special Expressions
+ . any single character \s any white space (spaces, tab and new line), \S any non white space \d any digits, \D any non-digits \w any word characters (letters, digits and underscore), any non-word  Anchoring</description>
+    </item>
+    
+    <item>
+      <title>Command: diff</title>
+      <link>https://whycoding.github.io/blog/2019/2019-09-23-command-diff/</link>
+      <pubDate>Mon, 23 Sep 2019 00:42:57 -0400</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2019/2019-09-23-command-diff/</guid>
+      <description>diff command can be used to analyze two files and output the lines that are different. It also can output a patch file which can be used to make one file be identical to the other.
+Basic Usage fool@bar:~$ diff file1 file2  Here are some very useful options.
+ -b: ignore changes in the amount of white space -B: ignore changes whose lines are all blank -w: ignore all spaces  Output Format The basic usage only outputs the different lines.</description>
+    </item>
+    
+    <item>
+      <title>Basic Shell Programming</title>
+      <link>https://whycoding.github.io/blog/2019-09-17-bash-programming/</link>
+      <pubDate>Tue, 17 Sep 2019 00:42:57 -0400</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2019-09-17-bash-programming/</guid>
+      <description>Introduction Shell provides users an interface to interact with the operating system. It interprets the shell script and handles the output from the operating system.
+In fact, shell itself is an application. The most common shell in UNIX-like system is bash. Another popular shell is zsh with enhanced functions. For SSL telnet connection, the ssh shell is usually used.
+Header The shell script can be run by using
+bash script-name  You can replace bash with any shell you want.</description>
+    </item>
+    
+    <item>
+      <title>Groups and Fields</title>
+      <link>https://whycoding.github.io/blog/2018/ecc2/</link>
+      <pubDate>Wed, 26 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2018/ecc2/</guid>
+      <description>What is a group? theorem inverse element is unique identity element is unique
+subgroup closed
+coset</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>https://whycoding.github.io/blog/2018/ml1/</link>
+      <pubDate>Wed, 26 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2018/ml1/</guid>
+      <description>Linear Regression? For an $n$ dimensional vector $\mathbf{x}$, the result is $y$. Find the coefficient $\boldsymbol{\Theta}$ which minimize $\frac{1}{2}\sum_j^m (y-\boldsymbol{\Theta\mathbf{x})^2$.
+using gradient descent method to get the result iteratively $$\Theta ：= \Theta -\alpha \sum (y-\boldsymbol{\Theta\mathbf{x})\mathbf{x}$$
+ batch gradient descent : use the whole data set to train the model stochastic gradient descent : use one or part of the data set to train each step; fast but not guarantee the convergency  closed form of the result : $$\Theta = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T Y$$</description>
+    </item>
+    
+    <item>
+      <title>SNR, Eb/No in Error Correction Codes</title>
+      <link>https://whycoding.github.io/blog/2018/ecc1/</link>
+      <pubDate>Wed, 26 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2018/ecc1/</guid>
+      <description>What is AWGN channel? When a message $\mathbf{x}$ is sent to a noisy channel, the output message $\mathbf{y}$ is not the original one. If the channel is AWGN channel,the relation between input and output of the channel is $$\mathbf{y} = \mathbf{x} + \mathbf{n}$$ where $\mathbf{n} \sim N(0,\sigma^2)$ is the Gaussian noise.
+The name Additive White Gaussian Noise (AWGN) comes from 3 aspect:
+ The noise is added to the original message directly; In frequency domain, the noise has uniform power across the frequency band which is an analogy to the color white.</description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://whycoding.github.io/blog/2018/test/</link>
+      <pubDate>Thu, 31 May 2018 13:32:05 -0400</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2018/test/</guid>
+      <description>There should be something!</description>
+    </item>
+    
+    <item>
+      <title>AWGN channel</title>
+      <link>https://whycoding.github.io/blog/2017/20170308awgnchannel/</link>
+      <pubDate>Tue, 16 May 2017 19:24:54 -0400</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2017/20170308awgnchannel/</guid>
+      <description>What is AWGN channel? When a message $\mathbf{x}$ is sent to a noisy channel, the output message $\mathbf{y}$ is not the original one. If the channel is AWGN channel,the relation between input and output of the channel is $$\mathbf{y} = \mathbf{x} + \mathbf{n}$$ where $\mathbf{n} \sim N(0,\sigma^2)$ is the Gaussian noise.
+The name Additive White Gaussian Noise (AWGN) comes from 3 aspect:
+ The noise is added to the original message directly; In frequency domain, the noise has uniform power across the frequency band which is an analogy to the color white.</description>
+    </item>
+    
+    <item>
+      <title>卡尔顿大学的保险？</title>
+      <link>https://whycoding.github.io/blog/2017/20170307uhip/</link>
+      <pubDate>Tue, 07 Mar 2017 19:15:28 -0400</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2017/20170307uhip/</guid>
+      <description>在国内的时候，想必大家都听说过国外的医疗价格惊人，留学生们生病了也都能扛就扛吧，事实也确实如此。因此来到加拿大念书，一个重要的事情就是医疗保</description>
+    </item>
+    
+    <item>
+      <title>在卡尔顿大学开始你的博士生涯</title>
+      <link>https://whycoding.github.io/blog/2017/20170307phdcarleton/</link>
+      <pubDate>Tue, 07 Mar 2017 19:04:26 -0400</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2017/20170307phdcarleton/</guid>
+      <description>当我满怀热情地来到这片土地，陌生的环境打破了我几乎所有的经验体系，有太多不熟悉的事情使我感到沮丧， 我感谢那时帮助过我的所有人，也希望下面的经</description>
+    </item>
+    
+  </channel>
+</rss>

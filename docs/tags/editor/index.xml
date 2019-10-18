@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Editor on Dr.Y Homepage</title>
+    <link>https://whycoding.github.io/tags/editor/</link>
+    <description>Recent content in Editor on Dr.Y Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 16 May 2017 20:25:51 -0400</lastBuildDate>
+    
+	<atom:link href="https://whycoding.github.io/tags/editor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>20170407vim</title>
+      <link>https://whycoding.github.io/blog/2017/20170407vim/</link>
+      <pubDate>Tue, 16 May 2017 20:25:51 -0400</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2017/20170407vim/</guid>
+      <description>#移动# - w 意味着向后移动，出现在单词首 - e 意味着向后移动，出现在单词末 - dw 删除所在位置直到下个单词的首字母，单词间的空格也被删去 - *匹配下</description>
+    </item>
+    
+    <item>
+      <title>20170405latexmath</title>
+      <link>https://whycoding.github.io/blog/2017/20170405latexmath/</link>
+      <pubDate>Tue, 16 May 2017 20:23:37 -0400</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2017/20170405latexmath/</guid>
+      <description>font \begin{array}{rrl} &amp;amp;RQSZasdf &amp;amp; \text{default font} \text{\mathcal{RQSZasdf}}&amp;amp;\mathcal{RQSZasdf} &amp;amp; \text{used for alphabet }
+\text{\mathbb{RQSZasdf}}&amp;amp;\mathbb{RQSZasdf} &amp;amp; \text{used for set}
+\text{\mathrm{RQSZasdf}}&amp;amp;\mathrm{RQSZasdf} &amp;amp; \text{used for set}
+\text{\mathbf{RQSZasdf}}&amp;amp;\mathbf{RQSZasdf} &amp;amp; \text{used for vector} &amp;amp;\end{array}
+To bold lowercase Greek or other symbols use the \boldsymbol command
+symbol \begin{array}{rl} \triangleq &amp;amp; \text{equal by definition} \partial g &amp;amp; \text{partial derivative} \nabla &amp;amp; \text{gradient}
+\O \emptyset&amp;amp; \text{empty set} \end{array}
+equation $h(\infty, \infty) = \lim\limits_{\begin{subarray}{c} x\to \infty
+y\to \infty\end{subarray}} F_X(x)F_Y(y)$</description>
+    </item>
+    
+    <item>
+      <title>20170404latexcontent</title>
+      <link>https://whycoding.github.io/blog/2017/20170404latexcontent/</link>
+      <pubDate>Tue, 16 May 2017 20:22:53 -0400</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2017/20170404latexcontent/</guid>
+      <description>color \color{red}
+\newpage</description>
+    </item>
+    
+    <item>
+      <title>20170403latex</title>
+      <link>https://whycoding.github.io/blog/2017/20170403latex/</link>
+      <pubDate>Tue, 16 May 2017 20:21:20 -0400</pubDate>
+      
+      <guid>https://whycoding.github.io/blog/2017/20170403latex/</guid>
+      <description>What is $LaTeX$ Take a try installation first article Basic syntax insert picture \begin{figure} \includegraphics[width=12cm]{fig/purelin.png} \caption{purelin function} \label{fig:purelin} \end{figure}
+\begin{wrapfigure}{r}{0.25\textwidth} %this figure will be at the right \centering \includegraphics[width=0.25\textwidth]{mesh} \end{wrapfigure}
+pseudo program required package
+\begin{algorithm}{} \caption{Zhang&amp;rsquo;s check polytope projection algorithm} \label{algxiaojie} \begin{algorithmic}[1] \Require {vector $v$ and its length $d$} \Ensure {projection vector $z = \prod{P_d}(v)$
+ \State {get potential cutplane } \Repeat \State {Construct the negative log-likelihood vector } \State {Construct the $d_j \times N$ matrix $\mathbf{P}_j$ for all $j \in \mathcal{J}$} \State {Initialize $\mathbf{\lambda}_j$ as the all-zero vector, } \Until{$max_j ||\mathbf{P}_j\mathbf{x}-\mathbf{z_j}|| &amp;lt; \epsilon $}  \end{algorithmic} \end{algorithm} https://en.</description>
+    </item>
+    
+  </channel>
+</rss>

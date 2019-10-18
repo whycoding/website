@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Command: diff - Dr.Y Homepage </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="" />
+    <meta property="og:site_name" content="Dr.Y Homepage" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://whycoding.github.io/blog/2019/2019-09-23-command-diff/" />
+    <meta property="og:title" content="Command: diff" />
+    <meta property="og:image" content="https://whycoding.github.ioimage/sid_from_ice_age.jpg" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:title" content="Command: diff" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="https://whycoding.github.ioimage/sid_from_ice_age.jpg" />
+
+    <link rel="canonical" href="https://whycoding.github.io/blog/2019/2019-09-23-command-diff/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://whycoding.github.iocss/custom.css" />
+
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/tomorrow.min.css" integrity="sha256-0QU8ry64q+N6YBIEF/6XF6vUeF15gbNO4tLS6ikk0FI=" crossorigin="anonymous" />
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="https://whycoding.github.io/image/sid.ico">
+
+    
+        <link href="https://whycoding.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Dr.Y Homepage" />
+    
+</head>
+
+<body>
+    
+    <div class="my-4 my-md-5 header">
+    <div class="container">
+        <div class="row">
+            <div class="col-auto offset-md-1 d-none d-md-block">
+                
+                    <a href="https://whycoding.github.io">
+                        <img class="ml-md-4 logo img-fluid d-block rounded-circle" src="https://whycoding.github.io/image/sid_from_ice_age.jpg" alt="logo">
+                    </a>
+                
+            </div>
+            <div class="col-auto align-self-center mr-auto">
+                <a href="https://whycoding.github.io">
+                    <h1 class="name">Haoyuan Wei</h1>
+                </a>
+
+                <ul class="nav nav-primary">
+                    
+                        <li class="nav-item">
+                            <a class="text-uppercase nav-link text-publications" href="https://whycoding.github.io/publications/">
+                                
+                                Publications
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="text-uppercase nav-link text-projects" href="https://whycoding.github.io/projects/">
+                                
+                                Projects
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="text-uppercase nav-link text-blog" href="https://whycoding.github.io/blog/">
+                                
+                                Blog
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-10">
+                    <h1 class="mx-0 mx-md-4 blog-post-title">Command: diff</h1>
+
+                    <div class="mb-md-4 meta">
+                        
+                            
+                        
+
+                        <span class="date middot" title='Mon Sep 23 2019 00:42:57 EDT'>
+                            2019-09-23
+                        </span>
+
+                        <span class="reading-time middot">
+                            2 minute read
+                        </span>
+
+                        <div class="d-none d-md-inline tags">
+                            <ul class="list-unstyled d-inline">
+                                
+                                    <li class="d-inline middot">
+                                        <a href="https://whycoding.github.io/tags/software">software</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="d-none d-md-inline tags">
+                            <ul class="list-unstyled d-inline">
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="markdown">
+                        
+    
+
+<p><code>diff</code> command can be used to analyze two files and output the lines that are different. It also can output a patch file which can be used to make one file be identical to the other.</p>
+
+<h2 id="basic-usage">Basic Usage</h2>
+
+<pre><code class="language-bash">fool@bar:~$ diff file1 file2
+</code></pre>
+
+<p>Here are some very useful options.</p>
+
+<ul>
+<li><code>-b</code>: ignore changes in the amount of white space</li>
+<li><code>-B</code>: ignore changes whose lines are all blank</li>
+<li><code>-w</code>: ignore all spaces</li>
+</ul>
+
+<h2 id="output-format">Output Format</h2>
+
+<p>The basic usage only outputs the different lines. The context of the different lines can also be output by using <code>-c</code> or <code>-u</code>.</p>
+
+<ul>
+<li><code>-c</code>: context mode, output 3 lines context for both files</li>
+<li><code>-u</code>: unified mode, output 3 lines context only once</li>
+</ul>
+
+<p>The result can be output side by side by <code>-y</code> option. There are two additional options in side by side mode.</p>
+
+<ul>
+<li><code>--left-column</code> option prints only the left column of two common lines.</li>
+<li><code>--suppress-common-lines</code> option suppresses common lines entirely.</li>
+</ul>
+
+<h2 id="create-editing-scripts">Create Editing Scripts</h2>
+
+<p>The output of <code>diff</code> can be used by the editing program <code>patch</code> to modify the contents of file1, so that it matches the contents of file2.</p>
+
+<pre><code class="language-bash">fool@bar:~$ diff file1 file2 &gt; patchfile.patch
+fool@bar:~$ patch file1 -i patchfile.patch -o updatedfile
+</code></pre>
+
+<p>The patch file can also be used to reverse the change.</p>
+
+<pre><code class="language-bash">fool@bar:~$ patch updatedfile -R -i patchfile.patch -o newName
+</code></pre>
+
+<p>For two versions of a large project, the directories can be compared.</p>
+
+<pre><code class="language-bash">fool@bar:~$ diff -r dir1 dir2 &gt; patchfile.patch
+fool@bar:~$ patch -p0 -i patchfile.patch
+fool@bar:~$ patch -p0 -R -i patchfile.patch
+</code></pre>
+
+<p>Reference</p>
+
+<p><a href="https://www.computerhope.com/unix/udiff.htm">computerhope</a>
+<a href="https://linuxacademy.com/blog/linux/introduction-using-diff-and-patch/">linuxacademy</a></p>
+
+
+
+                    </div>
+
+                    
+                        <div class="navigation">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    
+                                        <div class="mx-0 mx-md-4 mt-4 text-left">
+                                            <a href="https://whycoding.github.io/blog/2019-09-17-bash-programming/">« Basic Shell Programming</a>
+                                        </div>
+                                    
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    
+                                        <div class="mx-0 mx-md-4 mt-4 text-right">
+                                            <a href="https://whycoding.github.io/blog/2019-10-01-regular-expression/">Regular Expression »</a>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="comments">
+
+      <div class="py-3 content">
+            <div class="container">
+                  <div class="row justify-content-center">
+                        <div class="col-sm-12 col-md-10">
+                              <div class="comments">
+                                    <div id="disqus_thread"></div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <script type="text/javascript">
+            (function () {
+                  
+                  
+                  if (window.location.hostname == "localhost")
+                        return;
+
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  var disqus_shortname = '';
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+      </script>
+      <noscript>
+            Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+      </noscript>
+</section>
+    <div class="my-4 footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-5">
+                
+                    <div class="mx-0 mx-md-4 text-left">
+                        
+                            <a href="https://whycoding.github.io/">© 2019 Haoyuan Wei</a>
+                        
+                    </div>
+                
+            </div>
+            <div class="col-sm-12 col-md-5">
+                <div class="mx-0 mx-md-4 text-right">
+                    
+                        <a href="https://github.com/whycoding" target="_blank">
+                            <img class="icon" src="https://whycoding.github.ioimg/github.svg" alt="GitHub" />
+                        </a>
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    <a href="https://www.linkedin.com/in/haoyuan-wei-56044972" target="_blank">
+                        <img class="icon" src="https://whycoding.github.ioimg/linkedin.svg" alt="LinkedIn" />
+                    </a>
+                    
+
+                    
+
+                    
+                    <a href="https://www.instagram.com/haoyuan.breeze/" target="_blank">
+                        <img class="icon" src="https://whycoding.github.ioimg/instagram.svg" alt="Instagram" />
+                    </a>
+                    
+
+                    
+
+                    
+
+                    
+                        <a href="https://whycoding.github.io/index.xml" class="mr-0">
+                            <img class="icon" src="https://whycoding.github.ioimg/rss.svg" alt="RSS" />
+                        </a>
+                    
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js" integrity="sha256-sNPiigbfSkqUzMc5rgrdztLnneCMAp6W9wetJUZu9Zw=" crossorigin="anonymous"></script>
+        
+        <script>
+            window.addEventListener('load', function() {
+                hljs.initHighlighting();
+            }, true);
+        </script>
+    
+
+    
+
+    
+    
+        
+<script src="https://whycoding.github.io/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+</body>
+
+</html>
