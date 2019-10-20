@@ -81,10 +81,10 @@ bash script-name  You can replace bash with any shell you want.</description>
     
     <item>
       <title>Publications</title>
-      <link>https://whycoding.github.io/papers/</link>
+      <link>https://whycoding.github.io/publications/</link>
       <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://whycoding.github.io/papers/</guid>
+      <guid>https://whycoding.github.io/publications/</guid>
       <description>Papaers  H. Wei and A. H. Banihashemi, ``A Novel ADMM Penalized decoder for LDPC Codes’’, to be submitted to IEEE Trans. Commun.. H. Wei, A. H. Banihashemi, X. Liu, and S. C. Draper, ``Corrections to “The ADMM Penalized Decoder for LDPC Codes”’’, to be submitted to IEEE Trans. Inf. Theory. H. Wei and A. H. Banihashemi, ``A Low-complexity Look-Up Table Based Syndrome Decoder for LDPC Codes’’, to be submitted to IEEE Trans.</description>
     </item>
     
