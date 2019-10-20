@@ -1,4 +1,4 @@
-baseurl = "https://whycoding.github.io"
+baseurl = "https://whycoding.github.io/website/"
 title = "Dr.Y Homepage"
 author = "Haoyuan Wei"
 canonifyurls = true

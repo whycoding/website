@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Dr.Y Homepage</title>
-    <link>https://whycoding.github.io/categories/</link>
+    <link>https://whycoding.github.io/website/categories/</link>
     <description>Recent content in Categories on Dr.Y Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 16 Oct 2019 00:42:57 -0400</lastBuildDate>
     
-	<atom:link href="https://whycoding.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://whycoding.github.io/website/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux</title>
-      <link>https://whycoding.github.io/categories/linux/</link>
+      <link>https://whycoding.github.io/website/categories/linux/</link>
       <pubDate>Wed, 16 Oct 2019 00:42:57 -0400</pubDate>
       
-      <guid>https://whycoding.github.io/categories/linux/</guid>
+      <guid>https://whycoding.github.io/website/categories/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>StudyNote</title>
-      <link>https://whycoding.github.io/categories/studynote/</link>
+      <link>https://whycoding.github.io/website/categories/studynote/</link>
       <pubDate>Tue, 16 May 2017 19:24:54 -0400</pubDate>
       
-      <guid>https://whycoding.github.io/categories/studynote/</guid>
+      <guid>https://whycoding.github.io/website/categories/studynote/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PhD Life</title>
-      <link>https://whycoding.github.io/categories/phd-life/</link>
+      <link>https://whycoding.github.io/website/categories/phd-life/</link>
       <pubDate>Tue, 07 Mar 2017 19:15:28 -0400</pubDate>
       
-      <guid>https://whycoding.github.io/categories/phd-life/</guid>
+      <guid>https://whycoding.github.io/website/categories/phd-life/</guid>
       <description></description>
     </item>
     

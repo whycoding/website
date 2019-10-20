@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>shell on Dr.Y Homepage</title>
-    <link>https://whycoding.github.io/tags/shell/</link>
+    <link>https://whycoding.github.io/website/tags/shell/</link>
     <description>Recent content in shell on Dr.Y Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 17 Sep 2019 00:42:57 -0400</lastBuildDate>
     
-	<atom:link href="https://whycoding.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://whycoding.github.io/website/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Basic Shell Programming</title>
-      <link>https://whycoding.github.io/blog/2019-09-17-bash-programming/</link>
+      <link>https://whycoding.github.io/website/blog/2019-09-17-bash-programming/</link>
       <pubDate>Tue, 17 Sep 2019 00:42:57 -0400</pubDate>
       
-      <guid>https://whycoding.github.io/blog/2019-09-17-bash-programming/</guid>
+      <guid>https://whycoding.github.io/website/blog/2019-09-17-bash-programming/</guid>
       <description>Introduction Shell provides users an interface to interact with the operating system. It interprets the shell script and handles the output from the operating system.
 In fact, shell itself is an application. The most common shell in UNIX-like system is bash. Another popular shell is zsh with enhanced functions. For SSL telnet connection, the ssh shell is usually used.
 Header The shell script can be run by using
