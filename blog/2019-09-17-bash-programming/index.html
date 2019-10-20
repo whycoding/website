@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Basic Shell Programming - Dr.Y Homepage </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="" />
+    <meta property="og:site_name" content="Dr.Y Homepage" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://whycoding.github.io/website/blog/2019-09-17-bash-programming/" />
+    <meta property="og:title" content="Basic Shell Programming" />
+    <meta property="og:image" content="https://whycoding.github.io/website/image/sid_from_ice_age.jpg" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:title" content="Basic Shell Programming" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="https://whycoding.github.io/website/image/sid_from_ice_age.jpg" />
+
+    <link rel="canonical" href="https://whycoding.github.io/website/blog/2019-09-17-bash-programming/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://whycoding.github.io/website/css/custom.css" />
+
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/tomorrow.min.css" integrity="sha256-0QU8ry64q+N6YBIEF/6XF6vUeF15gbNO4tLS6ikk0FI=" crossorigin="anonymous" />
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="https://whycoding.github.io/website/image/sid.ico">
+
+    
+        <link href="https://whycoding.github.io/website/index.xml" rel="alternate" type="application/rss+xml" title="Dr.Y Homepage" />
+    
+</head>
+
+<body>
+    
+    <div class="my-4 my-md-5 header">
+    <div class="container">
+        <div class="row">
+            <div class="col-auto offset-md-1 d-none d-md-block">
+                
+                    <a href="https://whycoding.github.io/website/">
+                        <img class="ml-md-4 logo img-fluid d-block rounded-circle" src="https://whycoding.github.io/website/image/sid_from_ice_age.jpg" alt="logo">
+                    </a>
+                
+            </div>
+            <div class="col-auto align-self-center mr-auto">
+                <a href="https://whycoding.github.io/website/">
+                    <h1 class="name">Haoyuan Wei</h1>
+                </a>
+
+                <ul class="nav nav-primary">
+                    
+                        <li class="nav-item">
+                            <a class="text-uppercase nav-link text-publications" href="https://whycoding.github.io/website/publications/">
+                                
+                                Publications
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="text-uppercase nav-link text-projects" href="https://whycoding.github.io/website/projects/">
+                                
+                                Projects
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="text-uppercase nav-link text-blog" href="https://whycoding.github.io/website/blog/">
+                                
+                                Blog
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-10">
+                    <h1 class="mx-0 mx-md-4 blog-post-title">Basic Shell Programming</h1>
+
+                    <div class="mb-md-4 meta">
+                        
+                            
+                        
+
+                        <span class="date middot" title='Tue Sep 17 2019 00:42:57 EDT'>
+                            2019-09-17
+                        </span>
+
+                        <span class="reading-time middot">
+                            2 minute read
+                        </span>
+
+                        <div class="d-none d-md-inline tags">
+                            <ul class="list-unstyled d-inline">
+                                
+                                    <li class="d-inline middot">
+                                        <a href="https://whycoding.github.io/website/tags/shell">shell</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="d-none d-md-inline tags">
+                            <ul class="list-unstyled d-inline">
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="markdown">
+                        
+    
+
+<h2 id="introduction">Introduction</h2>
+
+<p><code>Shell</code> provides users an interface to interact with the operating system. It interprets the shell script and handles the output from the operating system.</p>
+
+<p>In fact, shell itself is an application. The most common shell in UNIX-like system is <code>bash</code>. Another popular shell is <code>zsh</code> with enhanced functions. For SSL telnet connection, the <code>ssh</code> shell is usually used.</p>
+
+<h2 id="header">Header</h2>
+
+<p>The shell script can be run by using</p>
+
+<pre><code class="language-bash">bash script-name
+</code></pre>
+
+<p>You can replace <em>bash</em> with any shell you want. However, usually the shell scrip start with an directive statement, so that it can be run without specifing the shell name again.</p>
+
+<pre><code class="language-bash">#!/bin/bash
+</code></pre>
+
+<p>It should be noted that other than the first line, lines start with <code>#</code> are comment lines.</p>
+
+<h2 id="variable">Variable</h2>
+
+<p>Shell variables are created once they are assigned a value.</p>
+
+<ul>
+<li><p>Value assignment is done using the <code>=</code> sign. No space permitted when initializing variables.</p></li>
+
+<li><p>Variables are used by <code>$</code>. Usually use <code>${var}</code> to avoid ambiguity.</p></li>
+</ul>
+
+<h2 id="script-argument">Script argument</h2>
+
+<p>Arguments can be passed to the script when it is executed.</p>
+
+<p>Inside the script, the $1 variable references the first argument in the command line, $2 the second argument and so forth. The variable $0 references to the current script.</p>
+
+<h2 id="statement">Statement</h2>
+
+<ul>
+<li><p>Command</p>
+
+<p>Variables can be assigned with the value of a command output. <code>var=$(command)</code></p></li>
+
+<li><p>Perform arithmetic operations</p>
+
+<p>$((expression))</p>
+
+<p>ans=$(( x + y ))</p></li>
+</ul>
+
+<h2 id="condition-control">Condition control</h2>
+
+<pre><code class="language-bash">if [ condition ]; then
+  statement
+elif [ condition ]; then
+  statement
+else
+  statement
+fi
+</code></pre>
+
+<h2 id="loop">Loop</h2>
+
+<pre><code class="language-bash">for var in 1 2 3 4 5
+do
+    echo $var
+done
+</code></pre>
+
+<p>Other kinds of for loops</p>
+
+<pre><code class="language-bash">for output in $(command)
+for var in {1..5}
+for var in {0..10..2}
+for (( c=1; c&lt;=5; c++ ))
+</code></pre>
+
+<p><code>break</code> and <code>continue</code> can be used inside the loop</p>
+
+<h2 id="function">Function</h2>
+
+<pre><code>function_name {
+  command
+}
+</code></pre>
+
+<p>Do not have to specity the number of arguments</p>
+
+<h2 id="output-input">Output Input</h2>
+
+<p>printf &ldquo;%s: %d\n&rdquo; &ldquo;a string&rdquo; 12</p>
+
+
+
+                    </div>
+
+                    
+                        <div class="navigation">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    
+                                        <div class="mx-0 mx-md-4 mt-4 text-left">
+                                            <a href="https://whycoding.github.io/website/blog/2018/ecc2/">« Groups and Fields</a>
+                                        </div>
+                                    
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    
+                                        <div class="mx-0 mx-md-4 mt-4 text-right">
+                                            <a href="https://whycoding.github.io/website/blog/2019/2019-09-23-command-diff/">Command: diff »</a>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="comments">
+
+      <div class="py-3 content">
+            <div class="container">
+                  <div class="row justify-content-center">
+                        <div class="col-sm-12 col-md-10">
+                              <div class="comments">
+                                    <div id="disqus_thread"></div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <script type="text/javascript">
+            (function () {
+                  
+                  
+                  if (window.location.hostname == "localhost")
+                        return;
+
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  var disqus_shortname = '';
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+      </script>
+      <noscript>
+            Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+      </noscript>
+</section>
+    <div class="my-4 footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-5">
+                
+                    <div class="mx-0 mx-md-4 text-left">
+                        
+                            <a href="https://whycoding.github.io/">© 2019 Haoyuan Wei</a>
+                        
+                    </div>
+                
+            </div>
+            <div class="col-sm-12 col-md-5">
+                <div class="mx-0 mx-md-4 text-right">
+                    
+                        <a href="https://github.com/whycoding" target="_blank">
+                            <img class="icon" src="https://whycoding.github.io/website/img/github.svg" alt="GitHub" />
+                        </a>
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    <a href="https://www.linkedin.com/in/haoyuan-wei-56044972" target="_blank">
+                        <img class="icon" src="https://whycoding.github.io/website/img/linkedin.svg" alt="LinkedIn" />
+                    </a>
+                    
+
+                    
+
+                    
+                    <a href="https://www.instagram.com/haoyuan.breeze/" target="_blank">
+                        <img class="icon" src="https://whycoding.github.io/website/img/instagram.svg" alt="Instagram" />
+                    </a>
+                    
+
+                    
+
+                    
+
+                    
+                        <a href="https://whycoding.github.io/website/index.xml" class="mr-0">
+                            <img class="icon" src="https://whycoding.github.io/website/img/rss.svg" alt="RSS" />
+                        </a>
+                    
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js" integrity="sha256-sNPiigbfSkqUzMc5rgrdztLnneCMAp6W9wetJUZu9Zw=" crossorigin="anonymous"></script>
+        
+        <script>
+            window.addEventListener('load', function() {
+                hljs.initHighlighting();
+            }, true);
+        </script>
+    
+
+    
+
+    
+    
+        
+<script src="https://whycoding.github.io/website/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+</body>
+
+</html>

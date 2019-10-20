@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> AWGN channel - Dr.Y Homepage </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="" />
+    <meta property="og:site_name" content="Dr.Y Homepage" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://whycoding.github.io/website/blog/2017/20170308awgnchannel/" />
+    <meta property="og:title" content="AWGN channel" />
+    <meta property="og:image" content="https://whycoding.github.io/website/image/sid_from_ice_age.jpg" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:title" content="AWGN channel" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="https://whycoding.github.io/website/image/sid_from_ice_age.jpg" />
+
+    <link rel="canonical" href="https://whycoding.github.io/website/blog/2017/20170308awgnchannel/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://whycoding.github.io/website/css/custom.css" />
+
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/tomorrow.min.css" integrity="sha256-0QU8ry64q+N6YBIEF/6XF6vUeF15gbNO4tLS6ikk0FI=" crossorigin="anonymous" />
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="https://whycoding.github.io/website/image/sid.ico">
+
+    
+        <link href="https://whycoding.github.io/website/index.xml" rel="alternate" type="application/rss+xml" title="Dr.Y Homepage" />
+    
+</head>
+
+<body>
+    
+    <div class="my-4 my-md-5 header">
+    <div class="container">
+        <div class="row">
+            <div class="col-auto offset-md-1 d-none d-md-block">
+                
+                    <a href="https://whycoding.github.io/website/">
+                        <img class="ml-md-4 logo img-fluid d-block rounded-circle" src="https://whycoding.github.io/website/image/sid_from_ice_age.jpg" alt="logo">
+                    </a>
+                
+            </div>
+            <div class="col-auto align-self-center mr-auto">
+                <a href="https://whycoding.github.io/website/">
+                    <h1 class="name">Haoyuan Wei</h1>
+                </a>
+
+                <ul class="nav nav-primary">
+                    
+                        <li class="nav-item">
+                            <a class="text-uppercase nav-link text-publications" href="https://whycoding.github.io/website/publications/">
+                                
+                                Publications
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="text-uppercase nav-link text-projects" href="https://whycoding.github.io/website/projects/">
+                                
+                                Projects
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="text-uppercase nav-link text-blog" href="https://whycoding.github.io/website/blog/">
+                                
+                                Blog
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-10">
+                    <h1 class="mx-0 mx-md-4 blog-post-title">AWGN channel</h1>
+
+                    <div class="mb-md-4 meta">
+                        
+                            
+                        
+
+                        <span class="date middot" title='Tue May 16 2017 19:24:54 EDT'>
+                            2017-05-16
+                        </span>
+
+                        <span class="reading-time middot">
+                            2 minute read
+                        </span>
+
+                        <div class="d-none d-md-inline tags">
+                            <ul class="list-unstyled d-inline">
+                                
+                                    <li class="d-inline middot">
+                                        <a href="https://whycoding.github.io/website/tags/communications">Communications</a>
+                                    </li>
+                                
+                                    <li class="d-inline middot">
+                                        <a href="https://whycoding.github.io/website/tags/research">Research</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="d-none d-md-inline tags">
+                            <ul class="list-unstyled d-inline">
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="markdown">
+                        
+    
+
+<h2 id="what-is-awgn-channel">What is AWGN channel?</h2>
+
+<p>When a message $\mathbf{x}$ is sent to a noisy channel, the output message $\mathbf{y}$ is not the original one. If the channel is AWGN channel,the relation between input and output of the channel is
+$$\mathbf{y} = \mathbf{x} + \mathbf{n}$$
+where $\mathbf{n} \sim N(0,\sigma^2)$ is the Gaussian noise.</p>
+
+<p>The name Additive White Gaussian Noise (AWGN) comes from 3 aspect:</p>
+
+<ul>
+<li>The noise is added to the original message directly;</li>
+<li>In frequency domain, the noise has uniform power across the frequency band which is an analogy to the color white.</li>
+<li>In time domain, the noise is consistent to Gaussian noise.</li>
+</ul>
+
+<h2 id="why-we-use-awgn-channel">Why we use AWGN channel?</h2>
+
+<p>AWGN channel model is an important model in communication system. The reason as follows:</p>
+
+<ul>
+<li>There are many kinds of noise in a communication system. Based on Central Limit Theorem, the summation of many random processes tends to be a Gaussian random variable.</li>
+<li>AWGN channel can not describe some complex situration very well, but it is simple enough and the result can give the researcher basic knowledge.</li>
+</ul>
+
+<h2 id="how-to-simulate-in-awgn-channel">How to simulate in AWGN channel?</h2>
+
+<p>The behavior of AWGN channel relies on signal-to-noise ratio (SNR) which is defined as the ratio of signal power to the noise power, often expressed in decibels as<br />
+$$\mathrm{SNR} = 10\log<em>{10}(\frac{P</em>{signal}}{P_{noise}}), $$ where $P$ is the average power.</p>
+
+<p>However $\mathrm{SNR}$ usually related to bandwidth, if we do not want to take bandwidth into consideration, we usually use the notation $E_b/N_0$. $E_b$ is the energy per information bit. $N_0$ is the noise power spectral density. It is a normalized signal-to-noise ratio (SNR) measure, also known as the &ldquo;SNR per bit&rdquo;.</p>
+
+<p>In order to get $E_b$, we should know the relationship between $E_b$ and $E_s$ (the energy per modulated bit or the energy per symbol).
+$$E_s = R_c R_m E_b$$ where $R_c$ is the code rate, $R_m = \log_2(M)$ is the number of information bits that one symbol can express. For example, for BPSK, $R_m=\log_2(2)=1$, for QPSK, $R_m=\log_2(4)=2$. And $E_s$ is usually normalized as 1.</p>
+
+<p>For AWGN channel, the noise power spectral density (N0) is given by,
+$$N_0 = 2 \sigma^2$$</p>
+
+<p>Therefore $E_b/N_0$ can be represented as $$\frac{E_b}{N_0} = \frac{E_s}{R_c R_m N_0} = \frac{1}{R_c R_m 2 \sigma^2}$$
+If we write in dB with BPSK, $$\frac{E_b}{N<em>0} \mathrm{(dB)}= 10\log</em>{10}\frac{1}{2 R_c \sigma^2}\mathrm{(dB)}$$
+then we can get the variance of the noise by</p>
+
+<p>$$\sigma^2= 1/(2 R_c 10^{\frac{E_b}{N_0}/10})$$</p>
+
+
+
+                    </div>
+
+                    
+                        <div class="navigation">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    
+                                        <div class="mx-0 mx-md-4 mt-4 text-left">
+                                            <a href="https://whycoding.github.io/website/blog/2017/20170307uhip/">« 卡尔顿大学的保险？</a>
+                                        </div>
+                                    
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    
+                                        <div class="mx-0 mx-md-4 mt-4 text-right">
+                                            <a href="https://whycoding.github.io/website/blog/2018/test/">Test »</a>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="comments">
+
+      <div class="py-3 content">
+            <div class="container">
+                  <div class="row justify-content-center">
+                        <div class="col-sm-12 col-md-10">
+                              <div class="comments">
+                                    <div id="disqus_thread"></div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <script type="text/javascript">
+            (function () {
+                  
+                  
+                  if (window.location.hostname == "localhost")
+                        return;
+
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  var disqus_shortname = '';
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+      </script>
+      <noscript>
+            Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+      </noscript>
+</section>
+    <div class="my-4 footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-5">
+                
+                    <div class="mx-0 mx-md-4 text-left">
+                        
+                            <a href="https://whycoding.github.io/">© 2019 Haoyuan Wei</a>
+                        
+                    </div>
+                
+            </div>
+            <div class="col-sm-12 col-md-5">
+                <div class="mx-0 mx-md-4 text-right">
+                    
+                        <a href="https://github.com/whycoding" target="_blank">
+                            <img class="icon" src="https://whycoding.github.io/website/img/github.svg" alt="GitHub" />
+                        </a>
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    <a href="https://www.linkedin.com/in/haoyuan-wei-56044972" target="_blank">
+                        <img class="icon" src="https://whycoding.github.io/website/img/linkedin.svg" alt="LinkedIn" />
+                    </a>
+                    
+
+                    
+
+                    
+                    <a href="https://www.instagram.com/haoyuan.breeze/" target="_blank">
+                        <img class="icon" src="https://whycoding.github.io/website/img/instagram.svg" alt="Instagram" />
+                    </a>
+                    
+
+                    
+
+                    
+
+                    
+                        <a href="https://whycoding.github.io/website/index.xml" class="mr-0">
+                            <img class="icon" src="https://whycoding.github.io/website/img/rss.svg" alt="RSS" />
+                        </a>
+                    
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js" integrity="sha256-sNPiigbfSkqUzMc5rgrdztLnneCMAp6W9wetJUZu9Zw=" crossorigin="anonymous"></script>
+        
+        <script>
+            window.addEventListener('load', function() {
+                hljs.initHighlighting();
+            }, true);
+        </script>
+    
+
+    
+
+    
+    
+        
+<script src="https://whycoding.github.io/website/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+</body>
+
+</html>
