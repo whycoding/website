@@ -1,0 +1,54 @@
+baseurl = "https://whycoding.github.io/website/"
+title = "Dr.Y Homepage"
+author = "Haoyuan Wei"
+canonifyurls = true
+languagecode = "en"
+paginate = 3
+theme = "hugo-renga"
+
+enableEmoji = true
+hasCJKLanguage = true
+
+# googleAnalytics = "UA-00000000-1"
+# disqusShortname = "your-disqus-shortname"
+
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+publishDir = "docs"
+
+[params]
+pagetitle = "Haoyuan Wei"
+copyright = "© 2019 Haoyuan Wei"
+copyrightUrl = "https://whycoding.github.io/"
+faviconfile = "image/sid.ico"
+logofile = "image/sid_from_ice_age.jpg"
+posts_navigation = true
+uselatex = true
+highlightjs = true
+progressively = false
+
+github = "whycoding"
+#twitter = "nanxstats"
+linkedin = "haoyuan-wei-56044972"
+instagram = "haoyuan.breeze"
+#email = "example@example.com"
+
+
+[[menu.primary]]
+identifier = "publications"
+name = "Publications"
+url = "/publications/"
+weight = 1
+
+
+[[menu.primary]]
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
+weight = 2
+
+
+[[menu.primary]]
+identifier = "blog"
+name = "Blog"
+url = "/blog/"
+weight = 3
