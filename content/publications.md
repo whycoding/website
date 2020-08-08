@@ -1,15 +1,15 @@
 ---
 title: "Publications"
-date: "2018-10-09"
+date: "2020-08-08"
 menu: "main"
 description: "publication."
 ---
 
-## Papaers
+## Papers
 
-* H. Wei and A. H. Banihashemi, ``A Novel ADMM Penalized decoder for LDPC Codes’’, to be submitted to IEEE Trans. Commun..
-* H. Wei, A. H. Banihashemi, X. Liu, and S. C. Draper, ``Corrections to “The ADMM Penalized Decoder for LDPC Codes”’’, to be submitted to IEEE Trans. Inf. Theory.
 * H. Wei and A. H. Banihashemi, ``A Low-complexity Look-Up Table Based Syndrome Decoder for LDPC Codes’’, to be submitted to IEEE Trans. Commun..
+* H. Wei and A. H. Banihashemi, ``A Novel ADMM Penalized decoder for LDPC Codes’’, submitted to IEEE Trans. Commun..
+* H. Wei, S. C. Draper and X. Liu, ``Corrections to “The ADMM Penalized Decoder for LDPC Codes”’’, submitted to IEEE Trans. Inf. Theory.
 * H. Wei and A. H. Banihashemi, ``An Iterative Check Polytope Projection Algorithm for ADMM Decoding of LDPC Codes’’, IEEE Commun. Lett., vol. 21, no. 1, pp. 29-32, Jan. 2018.
 * X. Jiao, J. Mu, and H. Wei, ``Reduced Complexity Node-Wise Scheduling of ADMM Decoding for LDPC Codes’’, IEEE Commun. Lett., vol. 21, no. 3, pp. 47t2-475, Mar. 2017.
 * H. Wei, X. Jiao, and J. Mu, ``Reduced Complexity ADMM-based Linear Programming Decoding for LDPC Codes’’, IEEE Commun. Lett., vol. 19, no. 6, pp. 909-912, Jun. 2015.

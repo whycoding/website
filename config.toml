@@ -17,7 +17,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
 pagetitle = "Haoyuan Wei"
-copyright = "© 2019 Haoyuan Wei"
+copyright = "© 2020 Haoyuan Wei"
 copyrightUrl = "https://whycoding.github.io/"
 faviconfile = "image/sid.ico"
 logofile = "image/sid_from_ice_age.jpg"
