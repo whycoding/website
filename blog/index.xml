@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Dr.Y Homepage</title>
@@ -19,7 +19,7 @@
       <guid>https://whycoding.github.io/website/blog/2019-10-16-command-grep-cut-awk/</guid>
       <description>The three commands can be used to process the text/message. Usually, grep is used to filter lines containing the keyword. cut is used to output part of the line. awk is used to modify the lines.
 grep The common usage of grep to find keyword is as follows.
-fool@bar:~$ grep &amp;quot;keyword&amp;quot; ./file.txt   -n: print the line number -i: ignore case distinctions -w: match whole the words -o: output only the matching segment, rather than the full line -E: use extended regular expression syntax -C2: show 2 context lines in addition to the matched line  cut The common usage of cut to split a line by spaces and select the first field is as follows.</description>
+fool@bar:~$ grep &amp;#34;keyword&amp;#34; ./file.txt  -n: print the line number -i: ignore case distinctions -w: match whole the words -o: output only the matching segment, rather than the full line -E: use extended regular expression syntax -C2: show 2 context lines in addition to the matched line  cut The common usage of cut to split a line by spaces and select the first field is as follows.</description>
     </item>
     
     <item>
@@ -38,11 +38,9 @@ fool@bar:~$ grep &amp;quot;keyword&amp;quot; ./file.txt   -n: print the line num
       <pubDate>Tue, 01 Oct 2019 00:42:57 -0400</pubDate>
       
       <guid>https://whycoding.github.io/website/blog/2019-10-01-regular-expression/</guid>
-      <description>Regular Expression  Character Classes[0123456789]. It matches any single character in that list.
- [^0123] any character not in the list.
- [a-d] equivalent to [abcd].
- Predefined expressions, [:alnum:], [:alpha:], [:digit:], [:lower:], [:punct:], [:space:], [:upper:]  Special Expressions
- . any single character \s any white space (spaces, tab and new line), \S any non white space \d any digits, \D any non-digits \w any word characters (letters, digits and underscore), any non-word  Anchoring</description>
+      <description>Regular Expression   Character Classes[0123456789]. It matches any single character in that list.
+ [^0123] any character not in the list. [a-d] equivalent to [abcd]. Predefined expressions, [:alnum:], [:alpha:], [:digit:], [:lower:], [:punct:], [:space:], [:upper:]    Special Expressions
+ . any single character \s any white space (spaces, tab and new line), \S any non white space \d any digits, \D any non-digits \w any word characters (letters, digits and underscore), any non-word    Anchoring</description>
     </item>
     
     <item>
@@ -52,7 +50,7 @@ fool@bar:~$ grep &amp;quot;keyword&amp;quot; ./file.txt   -n: print the line num
       
       <guid>https://whycoding.github.io/website/blog/2019/2019-09-23-command-diff/</guid>
       <description>diff command can be used to analyze two files and output the lines that are different. It also can output a patch file which can be used to make one file be identical to the other.
-Basic Usage fool@bar:~$ diff file1 file2  Here are some very useful options.
+Basic Usage fool@bar:~$ diff file1 file2 Here are some very useful options.
  -b: ignore changes in the amount of white space -B: ignore changes whose lines are all blank -w: ignore all spaces  Output Format The basic usage only outputs the different lines.</description>
     </item>
     
@@ -65,7 +63,7 @@ Basic Usage fool@bar:~$ diff file1 file2  Here are some very useful options.
       <description>Introduction Shell provides users an interface to interact with the operating system. It interprets the shell script and handles the output from the operating system.
 In fact, shell itself is an application. The most common shell in UNIX-like system is bash. Another popular shell is zsh with enhanced functions. For SSL telnet connection, the ssh shell is usually used.
 Header The shell script can be run by using
-bash script-name  You can replace bash with any shell you want.</description>
+bash script-name You can replace bash with any shell you want.</description>
     </item>
     
     <item>

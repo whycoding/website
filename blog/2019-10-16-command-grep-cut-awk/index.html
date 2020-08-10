@@ -132,21 +132,14 @@
 
                     <div class="markdown">
                         
-    
-
-<p>The three commands can be used to process the text/message.
+    <p>The three commands can be used to process the text/message.
 Usually, <code>grep</code> is used to filter lines containing the keyword.
 <code>cut</code> is used to output part of the line.
 <code>awk</code> is used to modify the lines.</p>
-
 <h2 id="grep">grep</h2>
-
 <p>The common usage of <code>grep</code> to find <code>keyword</code> is as follows.</p>
-
-<pre><code class="language-bash">fool@bar:~$ grep &quot;keyword&quot; ./file.txt
-</code></pre>
-
-<ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fool@bar:~$ grep <span style="color:#e6db74">&#34;keyword&#34;</span> ./file.txt
+</code></pre></div><ul>
 <li><code>-n</code>: print the line number</li>
 <li><code>-i</code>: ignore case distinctions</li>
 <li><code>-w</code>: match whole the words</li>
@@ -154,30 +147,19 @@ Usually, <code>grep</code> is used to filter lines containing the keyword.
 <li><code>-E</code>: use extended regular expression syntax</li>
 <li><code>-C2</code>: show 2 context lines in addition to the matched line</li>
 </ul>
-
 <h2 id="cut">cut</h2>
-
 <p>The common usage of <code>cut</code> to split a line by spaces and select the first field is as follows.</p>
-
-<pre><code class="language-bash">fool@bar:~$ cut -d &quot; &quot; -f 1 ./file.txt
-</code></pre>
-
-<ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fool@bar:~$ cut -d <span style="color:#e6db74">&#34; &#34;</span> -f <span style="color:#ae81ff">1</span> ./file.txt
+</code></pre></div><ul>
 <li><code>-d &quot; &quot; -f 1, 2 ----output-delimiter='%'</code>: use space as delimiter and select the first and the second fields of each line and output with delimiter %.</li>
 <li><code>-b 1-5</code>: select the first to the fifth byte of each line</li>
 <li><code>-c 1, 2</code>: select the first and the second character of each line</li>
 </ul>
-
 <h2 id="awk">awk</h2>
-
 <p>The common usage of <code>awk</code> to split a line containing the keyword by spaces and select the first field is as follows.</p>
-
-<pre><code class="language-bash">fool@bar:~$ awk '/keyword/ {print $1}' ./file.txt
-</code></pre>
-
-<pre><code class="language-bash">fool@bar:~$ awk '{print &quot;newstring &quot; $1,$4}' employee.txt 
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fool@bar:~$ awk <span style="color:#e6db74">&#39;/keyword/ {print $1}&#39;</span> ./file.txt
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fool@bar:~$ awk <span style="color:#e6db74">&#39;{print &#34;newstring &#34; $1,$4}&#39;</span> employee.txt 
+</code></pre></div>
 
 
                     </div>
@@ -242,7 +224,7 @@ Usually, <code>grep</code> is used to filter lines containing the keyword.
                 
                     <div class="mx-0 mx-md-4 text-left">
                         
-                            <a href="https://whycoding.github.io/">© 2019 Haoyuan Wei</a>
+                            <a href="https://whycoding.github.io/">© 2020 Haoyuan Wei</a>
                         
                     </div>
                 

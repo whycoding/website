@@ -132,61 +132,37 @@
 
                     <div class="markdown">
                         
-    
-
-<p><code>diff</code> command can be used to analyze two files and output the lines that are different. It also can output a patch file which can be used to make one file be identical to the other.</p>
-
+    <p><code>diff</code> command can be used to analyze two files and output the lines that are different. It also can output a patch file which can be used to make one file be identical to the other.</p>
 <h2 id="basic-usage">Basic Usage</h2>
-
-<pre><code class="language-bash">fool@bar:~$ diff file1 file2
-</code></pre>
-
-<p>Here are some very useful options.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fool@bar:~$ diff file1 file2
+</code></pre></div><p>Here are some very useful options.</p>
 <ul>
 <li><code>-b</code>: ignore changes in the amount of white space</li>
 <li><code>-B</code>: ignore changes whose lines are all blank</li>
 <li><code>-w</code>: ignore all spaces</li>
 </ul>
-
 <h2 id="output-format">Output Format</h2>
-
 <p>The basic usage only outputs the different lines. The context of the different lines can also be output by using <code>-c</code> or <code>-u</code>.</p>
-
 <ul>
 <li><code>-c</code>: context mode, output 3 lines context for both files</li>
 <li><code>-u</code>: unified mode, output 3 lines context only once</li>
 </ul>
-
 <p>The result can be output side by side by <code>-y</code> option. There are two additional options in side by side mode.</p>
-
 <ul>
 <li><code>--left-column</code> option prints only the left column of two common lines.</li>
 <li><code>--suppress-common-lines</code> option suppresses common lines entirely.</li>
 </ul>
-
 <h2 id="create-editing-scripts">Create Editing Scripts</h2>
-
 <p>The output of <code>diff</code> can be used by the editing program <code>patch</code> to modify the contents of file1, so that it matches the contents of file2.</p>
-
-<pre><code class="language-bash">fool@bar:~$ diff file1 file2 &gt; patchfile.patch
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fool@bar:~$ diff file1 file2 &gt; patchfile.patch
 fool@bar:~$ patch file1 -i patchfile.patch -o updatedfile
-</code></pre>
-
-<p>The patch file can also be used to reverse the change.</p>
-
-<pre><code class="language-bash">fool@bar:~$ patch updatedfile -R -i patchfile.patch -o newName
-</code></pre>
-
-<p>For two versions of a large project, the directories can be compared.</p>
-
-<pre><code class="language-bash">fool@bar:~$ diff -r dir1 dir2 &gt; patchfile.patch
+</code></pre></div><p>The patch file can also be used to reverse the change.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fool@bar:~$ patch updatedfile -R -i patchfile.patch -o newName
+</code></pre></div><p>For two versions of a large project, the directories can be compared.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fool@bar:~$ diff -r dir1 dir2 &gt; patchfile.patch
 fool@bar:~$ patch -p0 -i patchfile.patch
 fool@bar:~$ patch -p0 -R -i patchfile.patch
-</code></pre>
-
-<p>Reference</p>
-
+</code></pre></div><p>Reference</p>
 <p><a href="https://www.computerhope.com/unix/udiff.htm">computerhope</a>
 <a href="https://linuxacademy.com/blog/linux/introduction-using-diff-and-patch/">linuxacademy</a></p>
 
@@ -258,7 +234,7 @@ fool@bar:~$ patch -p0 -R -i patchfile.patch
                 
                     <div class="mx-0 mx-md-4 text-left">
                         
-                            <a href="https://whycoding.github.io/">© 2019 Haoyuan Wei</a>
+                            <a href="https://whycoding.github.io/">© 2020 Haoyuan Wei</a>
                         
                     </div>
                 

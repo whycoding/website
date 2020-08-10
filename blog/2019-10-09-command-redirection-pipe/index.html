@@ -132,76 +132,46 @@
 
                     <div class="markdown">
                         
-    
-
-<p>Every program running on the command line has three data streams connected to it.</p>
-
+    <p>Every program running on the command line has three data streams connected to it.</p>
 <ul>
 <li>STDIN (0) - Standard input (keyboard for example)</li>
 <li>STDOUT (1) - Standard output (defaults to the terminal)</li>
 <li>STDERR (2) - Standard error (for error messages, defaults to the terminal)</li>
 </ul>
-
 <p>The program usually gets its arguments from STDIN and outputs messages to STDOUT. The error messages will be output to STDERR. Redirection and pipe can be used to change the source of the argument or the destination of the output message.</p>
-
 <h2 id="stdout-redirection">STDOUT Redirection</h2>
-
 <p>STDOUT redirection can be used to save the output of a program to a file instead of STDOUT (printing it on the terminal). The basic usage is</p>
-
-<pre><code class="language-bash">fool@bar:~$ command &gt; result.txt
-</code></pre>
-
-<p>The output message of <code>command</code> will be save to <code>result.txt</code>. It should be noted <code>result.txt</code> will be created if it doesn&rsquo;t exist and its content will be erased if it is not empty. <code>&gt;&gt;</code> can be used if the content of <code>result.txt</code> needs to be kept.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fool@bar:~$ command &gt; result.txt
+</code></pre></div><p>The output message of <code>command</code> will be save to <code>result.txt</code>. It should be noted <code>result.txt</code> will be created if it doesn't exist and its content will be erased if it is not empty. <code>&gt;&gt;</code> can be used if the content of <code>result.txt</code> needs to be kept.</p>
 <h2 id="stderr-redirection">STDERR Redirection</h2>
-
 <p>STDERR redirection can be used to save the error message of a program to a file instead of STDERR. The basic usage is</p>
-
-<pre><code class="language-bash">fool@bar:~$ command 2&gt; error.log
-</code></pre>
-
-<p>The error message of <code>command</code> will be save to <code>error.log</code>.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fool@bar:~$ command 2&gt; error.log
+</code></pre></div><p>The error message of <code>command</code> will be save to <code>error.log</code>.</p>
 <h2 id="stdin-redirection">STDIN Redirection</h2>
-
 <p>STDIN redirection can be used to send the program some arguments. The basic usage is</p>
-
-<pre><code class="language-bash">fool@bar:~$ command &lt; parameter.txt
-</code></pre>
-
-<p>The content of <code>command</code> will be sent to <code>command</code>.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fool@bar:~$ command &lt; parameter.txt
+</code></pre></div><p>The content of <code>command</code> will be sent to <code>command</code>.</p>
 <h2 id="pipe">Pipe</h2>
-
 <p><code>pipe</code> takes the <code>STDOUT</code> of a command and pass it to the <code>STDIN</code> of the next command. The basic usuage is</p>
-
-<pre><code class="language-bash">fool@bar:~$ command 1 | command 2
-</code></pre>
-
-<p>Here are some useful case of pipe.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fool@bar:~$ command <span style="color:#ae81ff">1</span> | command <span style="color:#ae81ff">2</span>
+</code></pre></div><p>Here are some useful case of pipe.</p>
 <ul>
-<li><p>count number of files</p>
-
-<pre><code class="language-bash">fool@bar:~$ ls | wc -l
-</code></pre></li>
-
-<li><p>obtain the 5th and 6th file.</p>
-
-<pre><code class="language-bash">fool@bar:~$ ls | head -n6 | tail -n2
-</code></pre></li>
-
-<li><p>find the keyword</p>
-
-<pre><code class="language-bash">fool@bar:~$ cat file | grep &quot;keyword&quot;
-</code></pre></li>
-
-<li><p>sort and find the unique value</p>
-
-<pre><code class="language-bash">fool@bar:~$ cat file | sort | uniq
-</code></pre></li>
+<li>count number of files</li>
 </ul>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fool@bar:~$ ls | wc -l
+</code></pre></div><ul>
+<li>obtain the 5th and 6th file.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fool@bar:~$ ls | head -n6 | tail -n2
+</code></pre></div><ul>
+<li>find the keyword</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fool@bar:~$ cat file | grep <span style="color:#e6db74">&#34;keyword&#34;</span>
+</code></pre></div><ul>
+<li>sort and find the unique value</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fool@bar:~$ cat file | sort | uniq
+</code></pre></div>
 
 
                     </div>
@@ -270,7 +240,7 @@
                 
                     <div class="mx-0 mx-md-4 text-left">
                         
-                            <a href="https://whycoding.github.io/">© 2019 Haoyuan Wei</a>
+                            <a href="https://whycoding.github.io/">© 2020 Haoyuan Wei</a>
                         
                     </div>
                 

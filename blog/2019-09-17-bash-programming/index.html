@@ -132,98 +132,65 @@
 
                     <div class="markdown">
                         
-    
-
-<h2 id="introduction">Introduction</h2>
-
+    <h2 id="introduction">Introduction</h2>
 <p><code>Shell</code> provides users an interface to interact with the operating system. It interprets the shell script and handles the output from the operating system.</p>
-
 <p>In fact, shell itself is an application. The most common shell in UNIX-like system is <code>bash</code>. Another popular shell is <code>zsh</code> with enhanced functions. For SSL telnet connection, the <code>ssh</code> shell is usually used.</p>
-
 <h2 id="header">Header</h2>
-
 <p>The shell script can be run by using</p>
-
-<pre><code class="language-bash">bash script-name
-</code></pre>
-
-<p>You can replace <em>bash</em> with any shell you want. However, usually the shell scrip start with an directive statement, so that it can be run without specifing the shell name again.</p>
-
-<pre><code class="language-bash">#!/bin/bash
-</code></pre>
-
-<p>It should be noted that other than the first line, lines start with <code>#</code> are comment lines.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bash script-name
+</code></pre></div><p>You can replace <em>bash</em> with any shell you want. However, usually the shell scrip start with an directive statement, so that it can be run without specifing the shell name again.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span></code></pre></div><p>It should be noted that other than the first line, lines start with <code>#</code> are comment lines.</p>
 <h2 id="variable">Variable</h2>
-
 <p>Shell variables are created once they are assigned a value.</p>
-
 <ul>
-<li><p>Value assignment is done using the <code>=</code> sign. No space permitted when initializing variables.</p></li>
-
-<li><p>Variables are used by <code>$</code>. Usually use <code>${var}</code> to avoid ambiguity.</p></li>
+<li>
+<p>Value assignment is done using the <code>=</code> sign. No space permitted when initializing variables.</p>
+</li>
+<li>
+<p>Variables are used by <code>$</code>. Usually use <code>${var}</code> to avoid ambiguity.</p>
+</li>
 </ul>
-
 <h2 id="script-argument">Script argument</h2>
-
 <p>Arguments can be passed to the script when it is executed.</p>
-
 <p>Inside the script, the $1 variable references the first argument in the command line, $2 the second argument and so forth. The variable $0 references to the current script.</p>
-
 <h2 id="statement">Statement</h2>
-
 <ul>
-<li><p>Command</p>
-
-<p>Variables can be assigned with the value of a command output. <code>var=$(command)</code></p></li>
-
-<li><p>Perform arithmetic operations</p>
-
+<li>
+<p>Command</p>
+<p>Variables can be assigned with the value of a command output. <code>var=$(command)</code></p>
+</li>
+<li>
+<p>Perform arithmetic operations</p>
 <p>$((expression))</p>
-
-<p>ans=$(( x + y ))</p></li>
+<p>ans=$(( x + y ))</p>
+</li>
 </ul>
-
 <h2 id="condition-control">Condition control</h2>
-
-<pre><code class="language-bash">if [ condition ]; then
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> condition <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
   statement
-elif [ condition ]; then
+<span style="color:#66d9ef">elif</span> <span style="color:#f92672">[</span> condition <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
   statement
-else
+<span style="color:#66d9ef">else</span>
   statement
-fi
-</code></pre>
-
-<h2 id="loop">Loop</h2>
-
-<pre><code class="language-bash">for var in 1 2 3 4 5
-do
+<span style="color:#66d9ef">fi</span>
+</code></pre></div><h2 id="loop">Loop</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> var in <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">5</span>
+<span style="color:#66d9ef">do</span>
     echo $var
-done
-</code></pre>
-
-<p>Other kinds of for loops</p>
-
-<pre><code class="language-bash">for output in $(command)
-for var in {1..5}
-for var in {0..10..2}
-for (( c=1; c&lt;=5; c++ ))
-</code></pre>
-
-<p><code>break</code> and <code>continue</code> can be used inside the loop</p>
-
+<span style="color:#66d9ef">done</span>
+</code></pre></div><p>Other kinds of for loops</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> output in <span style="color:#66d9ef">$(</span>command<span style="color:#66d9ef">)</span>
+<span style="color:#66d9ef">for</span> var in <span style="color:#f92672">{</span>1..5<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">for</span> var in <span style="color:#f92672">{</span>0..10..2<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#f92672">(</span> c<span style="color:#f92672">=</span>1; c&lt;<span style="color:#f92672">=</span>5; c++ <span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+</code></pre></div><p><code>break</code> and <code>continue</code> can be used inside the loop</p>
 <h2 id="function">Function</h2>
-
 <pre><code>function_name {
   command
 }
-</code></pre>
-
-<p>Do not have to specity the number of arguments</p>
-
+</code></pre><p>Do not have to specity the number of arguments</p>
 <h2 id="output-input">Output Input</h2>
-
 <p>printf &ldquo;%s: %d\n&rdquo; &ldquo;a string&rdquo; 12</p>
 
 
@@ -294,7 +261,7 @@ for (( c=1; c&lt;=5; c++ ))
                 
                     <div class="mx-0 mx-md-4 text-left">
                         
-                            <a href="https://whycoding.github.io/">© 2019 Haoyuan Wei</a>
+                            <a href="https://whycoding.github.io/">© 2020 Haoyuan Wei</a>
                         
                     </div>
                 

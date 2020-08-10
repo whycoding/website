@@ -132,73 +132,66 @@
 
                     <div class="markdown">
                         
-    
-
-<h2 id="regular-expression">Regular Expression</h2>
-
+    <h2 id="regular-expression">Regular Expression</h2>
 <ul>
-<li><p>Character Classes<code>[0123456789]</code>. It matches any single character in that list.</p>
-
+<li>
+<p>Character Classes<code>[0123456789]</code>. It matches any single character in that list.</p>
 <ul>
-<li><code>[^0123]</code> any character not in the list.<br /></li>
-<li><code>[a-d]</code> equivalent to <code>[abcd]</code>.<br /></li>
+<li><code>[^0123]</code> any character not in the list.</li>
+<li><code>[a-d]</code> equivalent to <code>[abcd]</code>.</li>
 <li>Predefined expressions, <code>[:alnum:]</code>, <code>[:alpha:]</code>, <code>[:digit:]</code>, <code>[:lower:]</code>, <code>[:punct:]</code>, <code>[:space:]</code>, <code>[:upper:]</code></li>
-</ul></li>
-
-<li><p>Special Expressions</p>
-
+</ul>
+</li>
+<li>
+<p>Special Expressions</p>
 <ul>
 <li><code>.</code> any single character</li>
 <li><code>\s</code> any white space (spaces, tab and new line), <code>\S</code> any non white space</li>
 <li><code>\d</code> any digits, <code>\D</code> any non-digits</li>
 <li><code>\w</code> any word characters (letters, digits and underscore), any non-word</li>
-</ul></li>
-
-<li><p>Anchoring</p>
-
+</ul>
+</li>
+<li>
+<p>Anchoring</p>
 <ul>
 <li><code>^exp</code> a line begin with exp.</li>
 <li><code>exp$</code> a line end with exp.</li>
 <li><code>\&lt;exp</code> a word begin with exp.</li>
 <li><code>exp\&gt;</code> a word end with exp. <code>\&lt;c...h\&gt;</code></li>
-</ul></li>
-
-<li><p>Repetition</p>
-
+</ul>
+</li>
+<li>
+<p>Repetition</p>
 <ul>
 <li><code>a?</code>      The preceding item is optional and matched at most once.</li>
 <li><code>a*</code>      The preceding item will be matched zero or more times.</li>
 <li><code>a+</code>      The preceding item will be matched one or more times.</li>
 <li><code>a{n}</code>    The preceding item is matched exactly n times.</li>
-<li><code>a{n,m}</code>   The preceding item is matched at least n and at most m times.
-
-<br /></li>
-</ul></li>
-
-<li><p>Back References and Sub-expressions</p>
-
+<li><code>a{n,m}</code>   The preceding item is matched at least n and at most m times.</li>
+</ul>
+</li>
+<li>
+<p>Back References and Sub-expressions</p>
 <ul>
 <li><code>(exp)</code> enclosed in parentheses may be referred to later in the expression.</li>
 <li><code>\1</code> the substring previously matched by the 1st parenthesized sub-expression</li>
-</ul></li>
-
-<li><p>Alternation</p>
-
+</ul>
+</li>
+<li>
+<p>Alternation</p>
 <ul>
 <li><code>(a|b)</code> a or b</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h2 id="example">Example</h2>
-
 <ul>
-<li><p>find two lines with the same precedent and different suffixes.</p>
-
-<p>([\w-]<em>).cc[│\s]</em>\1.h</p></li>
+<li>
+<p>find two lines with the same precedent and different suffixes.</p>
+<p>([\w-]<em>).cc[│\s]</em>\1.h</p>
+</li>
 </ul>
-
 <h2 id="useful-site">Useful site</h2>
-
 <p><a href="https://regexr.com/">https://regexr.com/</a></p>
 
 
@@ -269,7 +262,7 @@
                 
                     <div class="mx-0 mx-md-4 text-left">
                         
-                            <a href="https://whycoding.github.io/">© 2019 Haoyuan Wei</a>
+                            <a href="https://whycoding.github.io/">© 2020 Haoyuan Wei</a>
                         
                     </div>
                 
